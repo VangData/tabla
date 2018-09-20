@@ -1,0 +1,131 @@
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>DataTables example - Bootstrap 3</title>
+	<link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+	<link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=19472395a2969da78c8a4c707e72123a">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style type="text/css" class="init">
+	
+	</style>
+	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="/media/js/site.js?_=5e8f232afab336abc1a1b65046a73460"></script>
+	<script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fstyling%2Fbootstrap.html" async=""></script>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/elecciones-catalanas-2017/d05d9896b0405b7eab412484e4992d4917f46597/searcher/js/iframeResizer.contentWindow.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+	
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": 13,
+		"bLengthChange" : false,
+		"order": [ , "desc" ],
+		"language": {
+            "lengthMenu": false,
+            "zeroRecords": "No hay ningún resultado",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+
+	</script>
+</head>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+<thead><tr><th title="Field #1">Delitos</th>
+<th title="Field #2">Enero - junio 2017</th>
+<th title="Field #3">Enero - junio 2018</th>
+<th title="Field #4">Variación porcentual</th>
+</tr></thead>
+<tbody><tr>
+<td>A. Homicidios consumados</td>
+<td align="right">151</td>
+<td align="right">146</td>
+<td  bgcolor="#ccebc5">-3,3</td>
+</tr>
+<tr>
+<td>B.Homicidios en grado tentativa</td>
+<td align="right">428</td>
+<td align="right">354</td>
+<td  bgcolor="#f0f9e8">-17,3</td>
+</tr>
+<tr>
+<td>C. Delitos de lesiones y riña tumultuaria</td>
+<td align="right">8.349</td>
+<td align="right">8.313</td>
+<td bgcolor="#ccebc5">-0,4</td>
+</tr>
+<tr>
+<td>D. Secuestro</td>
+<td align="right">33</td>
+<td align="right">36</td>
+<td bgcolor="#7bccc4">9,1</td>
+</tr>
+<tr>
+<td>E. Delitos contra la libertad e indemnidad sexual</td>
+<td align="right">5.696</td>
+<td align="right">6.519</td>
+<td bgcolor="#43a2ca">14,4</td>
+</tr>
+<tr>
+<td>E.1. Agresión sexual con penetración</td>
+<td align="right">613</td>
+<td align="right">788</td>
+<td bgcolor="#0868ac">28,5</td>
+</tr>
+<tr>
+<td>E.2. Resto de delitos contra la libertad sexual</td>
+<td align="right">5.083</td>
+<td align="right">5.731</td>
+<td bgcolor="#43a2ca">12,7</td>
+</tr>
+<tr>
+<td>F. Robos con violencia e intimidación</td>
+<td align="right">30.099</td>
+<td align="right">28.281</td>
+<td  bgcolor="#ccebc5">-6,0</td>
+</tr>
+<tr>
+<td>G. Robos con fuerza en domicilios y otras instalaciones</td>
+<td align="right">74.024</td>
+<td align="right">75.350</td>
+<td bgcolor="#7bccc4">1,8</td>
+</tr>
+<tr>
+<td>H. Robos con fuerza en domicilios</td>
+<td align="right">50.913</td>
+<td align="right">53.463</td>
+<td bgcolor="#7bccc4">5,0</td>
+</tr>
+<tr>
+<td>I. Hurtos</td>
+<td align="right">343.862</td>
+<td align="right">340.915</td>
+<td  bgcolor="#ccebc5">-0,9</td>
+</tr>
+<tr>
+<td>J. Sustracciones de vehículos</td>
+<td align="right">22.055</td>
+<td align="right">17.681</td>
+<td  bgcolor="#f0f9e8">-19,8</td>
+</tr>
+<tr>
+<td>K. Tráfico de drogas</td>
+<td align="right">6.461</td>
+<td align="right">6.905</td>
+<td bgcolor="#7bccc4">6,9</td>
+</tr>
+</tbody></table>
