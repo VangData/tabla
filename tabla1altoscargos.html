@@ -1,0 +1,123 @@
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>DataTables example - Bootstrap 3</title>
+	<link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+	<link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=19472395a2969da78c8a4c707e72123a">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style type="text/css" class="init">
+	
+	</style>
+	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="/media/js/site.js?_=5e8f232afab336abc1a1b65046a73460"></script>
+	<script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fstyling%2Fbootstrap.html" async=""></script>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/elecciones-catalanas-2017/d05d9896b0405b7eab412484e4992d4917f46597/searcher/js/iframeResizer.contentWindow.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+	
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": 14,
+		"bLengthChange" : false,
+		"order": [ 1, "desc" ],
+		"language": {
+            "lengthMenu": "Mostrando _MENU_ registros por página",
+            "zeroRecords": "No hay ningún resultado",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+	</script>
+</head>
+</head>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+<thead><tr><th title="Field #1">Nombre</th>
+<th title="Field #2">Patrimonio (€)</th>
+<th title="Field #3">Deuda (€)</th>
+</tr></thead>
+<tbody><tr>
+<td>Isabel García Tejerina</td>
+<td align="right">3501563</td>
+<td>228241</td>
+</tr>
+<tr>
+<td>Íñigo Méndez de Vigo</td>
+<td align="right">1474364</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Luis de Guindos</td>
+<td align="right">906543</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Alfonso Dastis</td>
+<td align="right">814374</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Cristóbal Montoro</td>
+<td align="right">724878</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Soraya S. de Santamaría</td>
+<td align="right">617295</td>
+<td>277416</td>
+</tr>
+<tr>
+<td>M. Dolores de Cospedal</td>
+<td align="right">587059</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Álvaro Nadal</td>
+<td align="right">553189</td>
+<td>31000</td>
+</tr>
+<tr>
+<td>Fátima Báñez</td>
+<td align="right">457716</td>
+<td>48854</td>
+</tr>
+<tr>
+<td>Rafael Catalá</td>
+<td align="right">362216</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Dolors Montserrat</td>
+<td align="right">174369</td>
+<td>183191</td>
+</tr>
+<tr>
+<td>Íñigo de la Serna</td>
+<td align="right">295823</td>
+<td>64464</td>
+</tr>
+<tr>
+<td>Juan Ignacio Zoido</td>
+<td align="right">168009</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Mariano Rajoy</td>
+<td align="right">941514</td>
+<td>0</td>
+</tr>
+</tbody></table>
