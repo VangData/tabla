@@ -1,0 +1,136 @@
+
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>DataTables example - Bootstrap 3</title>
+	<link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+	<link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=19472395a2969da78c8a4c707e72123a">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style type="text/css" class="init">
+	
+	</style>
+	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="/media/js/site.js?_=5e8f232afab336abc1a1b65046a73460"></script>
+	<script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fstyling%2Fbootstrap.html" async=""></script>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+	
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": 14,
+		"bLengthChange" : false,
+		"order": [ 1, "desc" ],
+		"language": {
+            "lengthMenu": "Mostrando _MENU_ registros por página",
+            "zeroRecords": "No hay ningún resultado",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+	</script>
+</head>
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+<thead><tr><th title="Field #1">Nombre</th>
+<th title="Field #2">Patrimonio</th>
+<th title="Field #3">Deuda</th>
+</tr></thead>
+<tbody><tr>
+<td>Josep Borrell</td>
+<td align="right">2774489</td>
+<td>61</td>
+</tr>
+<tr>
+<td>Isabel Celaá</td>
+<td align="right">1626933</td>
+<td>153</td>
+</tr>
+<tr>
+<td>Pedro Duque</td>
+<td align="right">1520466</td>
+<td>No tiene</td>
+</tr>
+<tr>
+<td>José Guirao</td>
+<td align="right">1068124</td>
+<td>No tiene</td>
+</tr>
+<tr>
+<td>Dolores Delgado</td>
+<td align="right">822786</td>
+<td>518</td>
+</tr>
+<tr>
+<td>Margarita Robles</td>
+<td align="right">755563</td>
+<td>No tiene</td>
+</tr>
+<tr>
+<td>María Luisa Carcedo</td>
+<td align="right">682807</td>
+<td>No tiene</td>
+</tr>
+<tr>
+<td>Reyes Maroto</td>
+<td align="right">464254</td>
+<td>93</td>
+</tr>
+<tr>
+<td>Nadia Calviño</td>
+<td align="right">397902</td>
+<td>No tiene</td>
+</tr>
+<tr>
+<td>Carmen Calvo</td>
+<td align="right">395673</td>
+<td>131</td>
+</tr>
+<tr>
+<td>Magdalena Valerio</td>
+<td align="right">359982</td>
+<td>No tiene</td>
+</tr>
+<tr>
+<td>Pedro Sánchez</td>
+<td align="right">342991</td>
+<td>192</td>
+</tr>
+<tr>
+<td>Teresa Ribera</td>
+<td align="right">338011</td>
+<td>No tiene</td>
+</tr>
+<tr>
+<td>Luis Planas</td>
+<td align="right">333622</td>
+<td>149</td>
+</tr>
+<tr>
+<td>José Luis Ábalos</td>
+<td align="right">213618</td>
+<td>221</td>
+</tr>
+<tr>
+<td>Fernando Grande-Marlaska</td>
+<td align="right">205000</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Meritxell Batet</td>
+<td align="right">132221</td>
+<td>114</td>
+</tr>
+</tbody></table>
