@@ -1,0 +1,130 @@
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>DataTables example - Bootstrap 3</title>
+	<link rel="shortcut icon" type="image/png" href="/media/images/favicon.png">
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.datatables.net/rss.xml">
+	<link rel="stylesheet" type="text/css" href="/media/css/site-examples.css?_=19472395a2969da78c8a4c707e72123a">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style type="text/css" class="init">
+	
+	</style>
+	<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="/media/js/site.js?_=5e8f232afab336abc1a1b65046a73460"></script>
+	<script type="text/javascript" src="/media/js/dynamic.php?comments-page=examples%2Fstyling%2Fbootstrap.html" async=""></script>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/elecciones-catalanas-2017/d05d9896b0405b7eab412484e4992d4917f46597/searcher/js/iframeResizer.contentWindow.min.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+	
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": 13,
+		"bLengthChange" : false,
+		"order": [ , "desc" ],
+		"language": {
+            "lengthMenu": false,
+            "zeroRecords": "No hay ningún resultado",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+	</script>
+</head>
+<table class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">Comunidad Autónoma</th>
+<th title="Field #2">Salario medio bruto mensual (€)</th>
+</tr></thead>
+<tbody><tr>
+<td>Andalucía</td>
+<td align="right">1.681,31</td>
+</tr>
+<tr>
+<td>Aragón</td>
+<td align="right">1.906,44</td>
+</tr>
+<tr>
+<td>Asturias</td>
+<td align="right">1.958,28</td>
+</tr>
+<tr>
+<td>Illes Balears</td>
+<td align="right">1.797,30</td>
+</tr>
+<tr>
+<td>Islas Canarias</td>
+<td align="right">1.606,56</td>
+</tr>
+<tr>
+<td>Cantabria</td>
+<td align="right">1.897,33</td>
+</tr>
+<tr>
+<td  bgcolor="#FFB4A4"><b>España<b></td>
+<td  bgcolor="#FFB4A4" align="right"><b>1.889,00<b></td>
+</tr>
+<tr>
+<td>Castilla y León</td>
+<td align="right">1.836,71</td>
+</tr>
+<tr>
+<td>Castilla - La Mancha</td>
+<td align="right">1.765,21</td>
+</tr>
+<tr>
+<td>Catalunya</td>
+<td align="right">1.992,88</td>
+</tr>
+<tr>
+<td>Comunitat Valenciana</td>
+<td align="right">1.677,84</td>
+</tr>
+<tr>
+<td>Extremadura</td>
+<td align="right">1.583,39</td>
+</tr>
+<tr>
+<td>Galicia</td>
+<td align="right">1.869,79</td>
+</tr>
+<tr>
+<td>Comunidad de MadridMadrid</td>
+<td align="right">2.191,73</td>
+</tr>
+<tr>
+<td>Región de Murcia</td>
+<td align="right">1.684,16</td>
+</tr>
+<tr>
+<td>Comunidad Foral de Navarra</td>
+<td align="right">2.177,78</td>
+</tr>
+<tr>
+<td>País Vasco</td>
+<td align="right">2.208,82</td>
+</tr>
+<tr>
+<td>La Rioja</td>
+<td align="right">1.838,41</td>
+</tr>
+<tr>
+<td>Ceuta</td>
+<td align="right">2.115,36</td>
+</tr>
+<tr>
+<td>Melilla</td>
+<td align="right">2.475,84</td>
+</tr>
+</tbody></table>
