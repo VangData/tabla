@@ -1,0 +1,236 @@
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" lang="es" xml:lang="es">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style>
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');			
+			h3 {
+        	font-family: OpenSans-Semibold, Open Sans;
+        	font-weight:600;
+        	font-size: 25 px;
+        	fill: #323232;
+     	}
+	</style>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/responsive/master/app.embed.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": 15,
+		"bLengthChange" : false,
+		"order": [ 2, "desc" ],
+		"language": {
+			"decimal": ",",
+			"thousands":".",
+            "lengthMenu": "Mostrando _MENU_ registros por página",
+            "zeroRecords": "No hay ningún resultado",
+            "info": "Mostrando página _PAGE_ de _PAGES_",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+	</script>
+<table id="example" class="table display compact table-hover table-sm" style="width:100%">
+<h3>Tasa de paro de los municipios de más de 40.000 habitantes</h3>
+<thead><tr><th title="Field #1">Municipio</th>
+<th title="Field #2">Ganador 2015</th>
+<th title="Field #3">Tasa de Paro 2014</th>
+</tr></thead>
+<tbody><tr>
+<td>La Línea de la Concepción</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>24,2</td>
+</tr>
+<tr>
+<td>San Fernando</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>21,2</td>
+</tr>
+<tr>
+<td>Linares</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>21,3</td>
+</tr>
+<tr>
+<td>Chiclana de la Frontera</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>24,9</td>
+</tr>
+<tr>
+<td>Utrera</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>23,8</td>
+</tr>
+<tr>
+<td>Algeciras</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>21,7</td>
+</tr>
+<tr>
+<td>Jerez de la Frontera</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>24,3</td>
+</tr>
+<tr>
+<td>Rincón de la Victoria</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>16,3</td>
+</tr>
+<tr>
+<td>El Puerto de Santa María</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>20,5</td>
+</tr>
+<tr>
+<td>Puerto Real</td>
+<td><font color="#6c2167"><b>PODEMOS</b></font></td>
+<td>23,4</td>
+</tr>
+<tr>
+<td>Dos Hermanas</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>29,53</td>
+</tr>
+<tr>
+<td>Alcalá de Guadaíra</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>23,6</td>
+</tr>
+<tr>
+<td>Écija</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>20,4</td>
+</tr>
+<tr>
+<td>Vélez-Málaga</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>19,1</td>
+</tr>
+<tr>
+<td>Roquetas de Mar</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>15,9</td>
+</tr>
+<tr>
+<td>Motril</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>17,1</td>
+</tr>
+<tr>
+<td>Mijas</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>15,7</td>
+</tr>
+<tr>
+<td>Benalmádena</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>15,5</td>
+</tr>
+<tr>
+<td>Córdoba</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>20,9</td>
+</tr>
+<tr>
+<td>Torremolinos</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>16</td>
+</tr>
+<tr>
+<td>Lucena</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>19,1</td>
+</tr>
+<tr>
+<td>Estepona</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>15,7</td>
+</tr>
+<tr>
+<td>Fuengirola</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>15,4</td>
+</tr>
+<tr>
+<td>Mairena del Aljarafe</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>16,7</td>
+</tr>
+<tr>
+<td>Huelva</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>20,8</td>
+</tr>
+<tr>
+<td>Almería</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>19,8</td>
+</tr>
+<tr>
+<td>Málaga</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>21,1</td>
+</tr>
+<tr>
+<td>Sevilla</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>19,4</td>
+</tr>
+<tr>
+<td>Antequera</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>17,4</td>
+</tr>
+<tr>
+<td>Granada</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>17,9</td>
+</tr>
+<tr>
+<td>Cádiz</td>
+<td><font color="#6c2167"><b>PODEMOS</b></font></td>
+<td>21,4</td>
+</tr>
+<tr>
+<td bgcolor="#d3d3d3">Media de los Municipios</td>
+<td bgcolor="#d3d3d3"> </td>
+<td bgcolor="#d3d3d3">15,6</td>
+</tr>
+<tr>
+<td>Sanlúcar de Barrameda</td>
+<td><font color="#ed5f60"><b>PSOE</b></font></td>
+<td>25,4</td>
+</tr>
+<tr>
+<td>Marbella</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>15,2</td>
+</tr>
+<tr>
+<td>El Ejido</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>14,9</td>
+</tr>
+<tr>
+<td>Jaén</td>
+<td><font color="#0093c9"><b>PP</b></font></td>
+<td>16,1</td>
+</tr>
+</tbody></table></div>
