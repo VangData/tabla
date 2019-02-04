@@ -1,0 +1,180 @@
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" lang="es" xml:lang="es">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css">
+	<style>
+			@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');			
+			h3 {
+        	font-family: OpenSans-Semibold, Open Sans;
+        	font-weight:600;
+        	font-size: 25 px;
+        	fill: #323232;
+     	}
+	</style>
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/responsive/master/app.embed.js"></script>
+	<script type="text/javascript" language="javascript" src="../resources/demo.js"></script>
+	<script type="text/javascript" class="init">
+$(document).ready(function() {
+	$('#example').DataTable( {
+		"pageLength": -1,
+		"bLengthChange" : false,
+		"order": [ 0, "desc" ],
+		"searching": false,
+		"paging": false,
+		"lengthChange": false,
+		"lengthMenu": false,
+		"language": {
+			"decimal": ",",
+			"thousands":".",
+            "lengthMenu": "Mostrando _MENU_ registros por página",
+            "zeroRecords": "No hay ningún resultado",
+            "info": "",
+            "infoEmpty": "No hay ningún resultado",
+            "search":         "Buscar:",
+            "infoFiltered": "(Filtrado de _MAX_ registros)",
+            "paginate": {
+        "first":      "Primera",
+        "last":       "Última",
+        "next":       "Siguiente",
+        "previous":   "Previa"
+    }
+        }
+        
+	});
+} );
+	</script>
+<table id="example" class="table display compact table-hover table-sm" style="width:100%">
+<h3>Últimas 10 jornadas</h3>
+<thead><tr><th title="Field #1">Puesto</th>
+<th title="Field #2">Equipo</th>
+<th title="Field #3">Puntos</th>
+<th title="Field #4">Dif. goles</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>Barcelona</td>
+<td align="right">26</td>
+<td align="right">21</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>R. Madrid</td>
+<td align="right">22</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>At. Madrid</td>
+<td align="right">21</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Getafe</td>
+<td align="right">16</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Valencia</td>
+<td align="right">16</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Betis</td>
+<td align="right">16</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Athletic</td>
+<td align="right">16</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>Rayo V. *</td>
+<td align="right">16</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Eibar</td>
+<td align="right">14</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>R. Sociedad</td>
+<td align="right">14</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>Sevilla</td>
+<td align="right">13</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Leganés*</td>
+<td align="right">13</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Celta</td>
+<td align="right">10</td>
+<td align="right">-4</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Levante</td>
+<td align="right">10</td>
+<td align="right">-7</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Huesca</td>
+<td align="right">9</td>
+<td align="right">-3</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>Alavés</td>
+<td align="right">9</td>
+<td align="right">-10</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>Villarreal</td>
+<td align="right">8</td>
+<td align="right">-6</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>Valladolid</td>
+<td align="right">8</td>
+<td align="right">-9</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td>Girona</td>
+<td align="right">7</td>
+<td align="right">-7</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>Espanyol</td>
+<td align="right">4</td>
+<td align="right">-17</td>
+</tr>
+</tbody></table>
